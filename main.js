@@ -73,9 +73,9 @@ function fibonacci (x) {
 
     for (let position = fiboArray.length; position < Number(x); position += 1) {
 
-    fiboArray[position] = add (fiboArray[position-2], fiboArray[position-1]);
+    fiboArray[position] = add (fiboArray[position-2], fiboArray[position-1]); // https://stackoverflow.com/
     // console.log(fiboArray);
     }
-    return fiboArray
+    return fiboArray;
 }
 console.log ('Fibonacci Kata:', fibonacci (8));
