@@ -9,17 +9,13 @@ console.log('Kata 01:', add (2, 4));
 // Kata 02
 function multiply (x, y) {
 
-    let Total = 0;
-
-    let multiplyArray = [];    
+    let Total = 0;  
     
     for (let position = 1; position <= Number(y); position += 1) {
 
         let newTotal = add (Number(x), Number(Total));
 
         Total = newTotal;
-
-        multiplyArray.push(newTotal);
     } 
 
     return Total;
@@ -30,17 +26,13 @@ console.log ('Kata 02:', multiply (6, 4));
 // Kata 03
 function power (x, y) {
 
-    let Total = x;
-
-    let multiplyArray = [];    
+    let Total = x;  
     
-    for (let position = 1; position <= Number(y) - 1; position += 1) {
+    for (let position = 2; position <= Number(y); position += 1) {
 
         let newTotal = multiply (Number(x), Number(Total));
 
         Total = newTotal;
-
-        multiplyArray.push(newTotal);
     }
 
     return Total;
